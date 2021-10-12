@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+body {
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  font-family: 'Inter', sans-serif;
+  margin: 0 25px;
+}
+
+.stats-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1110px;
+  height: 446px;
+  background-color: #1b1937;
+  border-radius: 8px;
+}
+
+.stats-card_img {
+  background-image: url('./images/image-header-desktop.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 540px;
+  height: 446px;
+  border-radius: 0 8px 8px 0;
+}
+
+.mask {
+  width: 540px;
+  height: 446px;
+  background-color: #ab5cdb;
+  mix-blend-mode: multiply;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+  width: 403px;
+  margin-left: 72px;
+}
+
+h2 span {
+  color: #ab5cdb;
+}
+
+p {
+  font-size: 15px;
+  line-height: 25px;
+  width: 374px;
+  margin-top: 25px;
+  margin-left: 72px;
+  opacity: 75%;
+}
+
+.stats {
+  display: flex;
+  margin-top: 72px;
+  margin-left: 72px;
+}
+
+.stat {
+  margin-right: 60px;
+}
+
+.stat h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.stat span {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 12px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  opacity: 60%;
+}
+
+.attribution {
+  position: fixed;
+  bottom: 0;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 1000px) {
+  .stats-card {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 327px;
+    height: 780px;
+  }
+  .stats-card_text {
+    order: 2;
+  }
+  h2 {
+    font-size: 28px;
+    width: 264px;
+    margin: 40px 0 0 0;
+    text-align: center;
+  }
+  p {
+    width: 264px;
+    margin: 16px 0 40px 0;
+    text-align: center;
+  }
+  .stats-card_img {
+    order: 1;
+    width: 327px;
+    height: 240px;
+    border-radius: 8px 8px 0 0;
+  }
+  .mask {
+    width: 327px;
+    height: 240px;
+  }
+  .stats {
+    flex-direction: column;    
+    align-items: center;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .stat {
+    margin: 0 0 24px 0;
+    text-align: center;
+  }
+}
